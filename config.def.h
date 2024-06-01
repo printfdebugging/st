@@ -6,7 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "JetBrainsMono Nerd Font:pixelsize=15:style=SemiLight:antialias=true:autohint=true";
+    "JetBrainsMono Nerd "
+    "Font:pixelsize=19:style=Regular:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -107,58 +108,33 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.90;
-/* Terminal colors (16 first used in escape sequence) */
-// static const char *colorname[] = {
-//     /* 8 normal colors */
-//     "#45475A", "#F38BA8", "#A6E3A1", "#F9E2AF", "#89B4FA", "#F5C2E7",
-//     "#94E2D5",
-//     "#BAC2DE",
-//
-//     /* 8 bright colors */
-//     "#585B70", "#F38BA8", "#A6E3A1", "#F9E2AF", "#89B4FA", "#F5C2E7",
-//     "#94E2D5",
-//     "#A6ADC8",
-//
-//     [256] = "#CDD6F4", /* default foreground colour */
-//     [257] = "#1E1E2E", /* default background colour */
-//     [258] = "#F5E0DC", /*575268*/
-//
-// };
-//
-// /*
-//  * foreground, background, cursor, reverse cursor
-//  */
-// unsigned int defaultfg = 256;
-// unsigned int defaultbg = 257;
-// unsigned int defaultcs = 258;
-// static unsigned int defaultrcs = 258;
+float alpha = 0.60;
 const char *colorname[] = {
 
-  /* 8 normal colors */
-  [0] = "#000104", /* black   */
-  [1] = "#1B4454", /* red     */
-  [2] = "#2C4A56", /* green   */
-  [3] = "#3A5A62", /* yellow  */
-  [4] = "#4D5055", /* blue    */
-  [5] = "#666665", /* magenta */
-  [6] = "#8B443F", /* cyan    */
-  [7] = "#bfbfc0", /* white   */
+    /* 8 normal colors */
+    [0] = "#000104", /* black   */
+    [1] = "#ac4242", /* red     */
+    [2] = "#90a959", /* green   */
+    [3] = "#f4bf75", /* yellow  */
+    [4] = "#6a9fb5", /* blue    */
+    [5] = "#aa759f", /* magenta */
+    [6] = "#75b5aa", /* cyan    */
+    [7] = "#d8d8d8", /* white   */
 
-  /* 8 bright colors */
-  [8]  = "#3f4042",  /* black   */
-  [9]  = "#1B4454",  /* red     */
-  [10] = "#2C4A56", /* green   */
-  [11] = "#3A5A62", /* yellow  */
-  [12] = "#4D5055", /* blue    */
-  [13] = "#666665", /* magenta */
-  [14] = "#8B443F", /* cyan    */
-  [15] = "#bfbfc0", /* white   */
+    /* 8 bright colors */
+    [8] = "#6b6b6b",  /* black   */
+    [9] = "#c55555",  /* red     */
+    [10] = "#aac474", /* green   */
+    [11] = "#feca88", /* yellow  */
+    [12] = "#82b8c8", /* blue    */
+    [13] = "#c28cb8", /* magenta */
+    [14] = "#93d3c3", /* cyan    */
+    [15] = "#f8f8f8", /* white   */
 
-  /* special colors */
-  [256] = "#000104", /* background */
-  [257] = "#bfbfc0", /* foreground */
-  [258] = "#bfbfc0",     /* cursor */
+    /* special colors */
+    [256] = "#000104", /* background */
+    [257] = "#bfbfc0", /* foreground */
+    [258] = "#bfbfc0", /* cursor */
 };
 
 /* Default colors (colorname index)
@@ -167,7 +143,7 @@ const char *colorname[] = {
 unsigned int defaultbg = 0;
 unsigned int defaultfg = 257;
 unsigned int defaultcs = 258;
-unsigned int defaultrcs= 258;
+unsigned int defaultrcs = 258;
 
 /*
  * Default shape of cursor
