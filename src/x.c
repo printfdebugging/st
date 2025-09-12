@@ -68,7 +68,7 @@ static void ttysend(const Arg *);
  */
 static char *font = "Iosevka Nerd Font:pixelsize=20:style=Regular:antialias=true:autohint=true";
 
-static int borderpx = 8;
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
