@@ -66,9 +66,8 @@ static void ttysend(const Arg *);
 /* appearance
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=15:style=Regular:antialias=true:autohint=true";
-
-static int borderpx = 2;
+static char *font   = "JetBrainsMono Nerd Font:pixelsize=19:style=Regular:antialias=true:autohint=true";
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
